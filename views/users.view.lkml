@@ -86,6 +86,11 @@ view: users {
     sql: ${TABLE}.postal_code ;;
   }
 
+  dimension: city_state {
+    type: string
+    sql: concat(${city}, " - ", ${state}) ;;
+  }
+
   dimension: state {
     type: string
     sql: ${TABLE}.state ;;
