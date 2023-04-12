@@ -10,6 +10,7 @@ view: products {
   }
 
   dimension: brand {
+
     type: string
     sql: ${TABLE}.brand ;;
   }
@@ -20,6 +21,7 @@ view: products {
   }
 
   dimension: cost {
+    label: "price"
     type: number
     sql: ${TABLE}.cost ;;
   }
