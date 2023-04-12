@@ -54,6 +54,12 @@ view: users {
     sql: concat( ${first_name}  , " " ${last_name});;
   }
 
+ measure: avg_age {
+   type: average
+    sql: ${age} ;;
+
+ }
+
   dimension: gender {
     type: string
     sql: ${TABLE}.gender ;;
