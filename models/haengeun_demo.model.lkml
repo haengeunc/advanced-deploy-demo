@@ -12,6 +12,7 @@ persist_with: haengeun_demo_default_datagroup
 
 explore: distribution_centers {}
 
+
 explore: orders {
   join: users {
     type: left_outer

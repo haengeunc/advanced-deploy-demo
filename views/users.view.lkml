@@ -10,6 +10,7 @@ view: users {
   }
 
   dimension: age {
+    label: "age number"
     type: number
     sql: ${TABLE}.age ;;
   }
