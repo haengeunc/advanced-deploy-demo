@@ -74,6 +74,18 @@ view: order_items {
     sql: ${TABLE}.sale_price ;;
   }
 
+#testing to get history playback - timefield required
+  dimension: created_at_date_time {
+    type: date_time
+    sql: ${TABLE}.created_at ;;
+
+  }
+
+  measure: average_sale_price {
+    type: average
+    sql: ${sale_price} ;;
+  }
+
   dimension_group: shipped {
     type: time
     timeframes: [
