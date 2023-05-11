@@ -20,6 +20,7 @@ view: users {
     label: "City Name"
     type: string
     sql: ${TABLE}.city ;;
+    description: "testing"
   }
 
   dimension: country {
