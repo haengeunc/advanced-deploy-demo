@@ -2,6 +2,7 @@ connection: "thelook_ecommerce_hc"
 
 # include all the views
 include: "/views/**/*.view"
+include: "/dashboards/*.lookml"
 
 datagroup: haengeun_demo_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
