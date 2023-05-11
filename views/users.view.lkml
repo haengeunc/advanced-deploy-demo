@@ -13,6 +13,7 @@ view: users {
     label: "age number"
     type: number
     sql: ${TABLE}.age ;;
+    description: "testing advanced deploy mode"
   }
 
   dimension: city {
