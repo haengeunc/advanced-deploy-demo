@@ -14,6 +14,7 @@ view: users {
     type: number
     sql: ${TABLE}.age ;;
     description: "testing advanced deploy mode"
+    group_label: "age is such a number"
   }
 
   dimension: city {
