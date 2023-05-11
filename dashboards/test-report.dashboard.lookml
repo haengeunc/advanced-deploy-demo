@@ -7,7 +7,7 @@
   elements:
   - title: Traffic source by age group - row totals included
     name: Traffic source by age group - row totals included
-    model: looker_training_haengeun
+    model: haengeun_demo
     explore: order_items
     type: looker_column
     fields: [age_group, users.traffic_source, users.count]
@@ -74,7 +74,7 @@
     height: 13
   - title: Users across countries
     name: Users across countries
-    model: looker_training_haengeun
+    model: haengeun_demo
     explore: order_items
     type: looker_grid
     fields: [users.count, users.country]
@@ -139,7 +139,7 @@
     height: 6
   - title: Total users signup - last 365 days
     name: Total users signup - last 365 days
-    model: looker_training_haengeun
+    model: haengeun_demo
     explore: order_items
     type: single_value
     fields: [users.count]
@@ -212,7 +212,7 @@
     height: 3
   - title: Users sign-up by age group
     name: Users sign-up by age group
-    model: looker_training_haengeun
+    model: haengeun_demo
     explore: order_items
     type: looker_line
     fields: [age_group, users.count, users.created_month]
@@ -281,7 +281,7 @@
     height: 8
   - title: Total users signup - All time
     name: Total users signup - All time
-    model: looker_training_haengeun
+    model: haengeun_demo
     explore: order_items
     type: single_value
     fields: [users.count]
@@ -352,7 +352,7 @@
     height: 3
   - title: Scatterplot - avg sale price by order created time
     name: Scatterplot - avg sale price by order created time
-    model: looker_training_haengeun
+    model: haengeun_demo
     explore: order_items
     type: looker_scatter
     fields: [order_items.status, order_items.average_sale_price, order_items.created_time]
@@ -420,7 +420,7 @@
     height: 8
   - title: Data History Playback Demo
     name: Data History Playback Demo
-    model: looker_training_haengeun
+    model: haengeun_demo
     explore: order_items
     type: looker_column
     fields: [users.count, users.country]
@@ -493,7 +493,7 @@
     height: 6
   - title: Area visual - unpin from zero, null value turned off
     name: Area visual - unpin from zero, null value turned off
-    model: looker_training_haengeun
+    model: haengeun_demo
     explore: order_items
     type: looker_area
     fields: [users.count, products.category]
@@ -587,7 +587,7 @@
     height: 1
   - title: Count of order items
     name: Count of order items
-    model: looker_training_haengeun
+    model: haengeun_demo
     explore: order_items
     type: looker_grid
     fields: [order_items.status, order_items.count]
@@ -658,7 +658,7 @@
     height: 4
   - title: Top 10 brand count items sold
     name: Top 10 brand count items sold
-    model: looker_training_haengeun
+    model: haengeun_demo
     explore: order_items
     type: looker_grid
     fields: [order_items.count, products.brand]
@@ -761,7 +761,7 @@
       type: advanced
       display: popover
       options: []
-    model: looker_training_haengeun
+    model: haengeun_demo
     explore: order_items
     listens_to_filters: []
     field: inventory_items.created_time
@@ -774,7 +774,7 @@
     ui_config:
       type: checkboxes
       display: popover
-    model: looker_training_haengeun
+    model: haengeun_demo
     explore: order_items
     listens_to_filters: []
     field: order_items.status
@@ -787,7 +787,7 @@
     ui_config:
       type: tag_list
       display: popover
-    model: looker_training_haengeun
+    model: haengeun_demo
     explore: order_items
     listens_to_filters: []
     field: products.brand
