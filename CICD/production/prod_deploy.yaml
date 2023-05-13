@@ -5,7 +5,7 @@ steps:
  entrypoint: 'bash'
  args:
  - '-c'
- - gcloud secrets versions access --secret=looker_haengeun-advanced-deploy-demo_prod_deploy__secret latest > /secrets/looker_deploy_secret
+ - gcloud secrets versions access --secret=looker_haengeun-advanced-deploy-demo_prod_deploy_secret latest > /secrets/looker_deploy_secret
  volumes:
  - name: 'secrets'
    path: '/secrets'
