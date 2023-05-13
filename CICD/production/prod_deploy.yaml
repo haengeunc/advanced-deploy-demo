@@ -12,7 +12,10 @@ steps:
 - name: launcher.gcr.io/google/ubuntu1604
  id: Deploy to Looker
  entrypoint: 'bash'
- args: ['-c', 'curl -k -i -X POST -H X-Looker-Deploy-SECRET:$(cat /secrets/looker_deploy_secret) https://35.189.193.107:9999/webhooks/projects/haengeun/deploy/branch/production']
+ args: ['-c', 'curl -k -i -X POST -H X-Looker-Deploy-SECRET:$(cat /secrets/looker_deploy_secret)  https://gcpl234.cloud.looker.com/webhooks/projects/haengeun-advanced-deploy-demo/deploy/branch/production']
+ 
+
+ 
  volumes:
  - name: 'secrets'
    path: '/secrets'
