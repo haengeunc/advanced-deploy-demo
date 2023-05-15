@@ -1,0 +1,21 @@
+steps:
+# fetch the secret and write to a volume
+- name: 'gcr.io/cloud-builders/gcloud'
+ id: Retrieve secret
+ entrypoint: 'bash'
+ args:
+ - '-c'
+ - gcloud secrets versions access --secret=looker_haengeun-advanced-deploy-demo_prod_deploy_secret latest > /secrets/looker_deploy_secret
+ volumes:
+ - name: 'secrets'
+   path: '/secrets'
+- name: launcher.gcr.io/google/ubuntu1604
+ id: Deploy to Looker
+ entrypoint: 'bash'
+ args: ['-c', 'curl -k -i -X POST -H X-Looker-Deploy-SECRET:$(cat /secrets/looker_deploy_secret)  https://gcpl234.cloud.looker.com/webhooks/projects/haengeun-advanced-deploy-demo/deploy/branch/production']
+ 
+
+ 
+ volumes:
+ - name: 'secrets'
+   path: '/secrets'
