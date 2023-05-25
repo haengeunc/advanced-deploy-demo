@@ -1,5 +1,5 @@
 view: products {
-  sql_table_name: `thelook_ecommerce_HC.products`
+  sql_table_name: `@{project_connection}.products`
     ;;
   drill_fields: [id]
 

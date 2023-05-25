@@ -1,5 +1,5 @@
 view: users {
-  sql_table_name: `thelook_ecommerce_HC.users`
+  sql_table_name: `@{project_connection}.users`
     ;;
   drill_fields: [id]
 
