@@ -1,4 +1,6 @@
-connection: "thelook_ecommerce_hc"
+connection: "@{project_connection}"
+# @connection
+# "thelook_ecommerce_hc"
 
 # include all the views
 include: "/views/**/*.view"

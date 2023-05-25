@@ -1,5 +1,5 @@
 view: distribution_centers {
-  sql_table_name: `thelook_ecommerce_HC.distribution_centers`
+  sql_table_name: `@{project_connection}.distribution_centers`
     ;;
   drill_fields: [id]
 

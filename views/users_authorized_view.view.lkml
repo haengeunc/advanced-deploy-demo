@@ -1,5 +1,5 @@
 view: users_authorized_view {
-  sql_table_name: `thelook_ecommerce_HC.users_authorized_view`
+  sql_table_name: `@{project_connection}.users_authorized_view`
     ;;
   drill_fields: [id]
 
