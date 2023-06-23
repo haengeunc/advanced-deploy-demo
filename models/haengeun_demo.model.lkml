@@ -1,4 +1,4 @@
-connection: "@{project_connection}"
+connection: "thelook_ecommerce_hc"
 # @connection
 # "thelook_ecommerce_hc"
 

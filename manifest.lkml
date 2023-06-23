@@ -14,6 +14,6 @@ constant: project_name {
 }
 
 constant: project_connection {
-  value: "thelook_ecommerce_hc"
+  value: "thelook_ecommerce_HC"
   export: override_required
 }
