@@ -2,7 +2,7 @@ name: py
 
 on:
   pull_request:
-    branches: [ prod ]
+    branches: [ production ]
 
 jobs:
   build:
