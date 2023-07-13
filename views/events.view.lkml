@@ -1,5 +1,5 @@
 view: events {
-  sql_table_name: `thelook_ecommerce_HC.events`
+  sql_table_name: `@{project_connection}.events`
     ;;
   drill_fields: [id]
 

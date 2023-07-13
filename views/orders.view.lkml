@@ -1,5 +1,5 @@
 view: orders {
-  sql_table_name: `thelook_ecommerce_HC.orders`
+  sql_table_name: `@{project_connection}.orders`
     ;;
   drill_fields: [order_id]
 
