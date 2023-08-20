@@ -84,6 +84,13 @@ view: users {
     sql: ${TABLE}.longitude ;;
   }
 
+  dimension: location {
+    type: location
+    sql_latitude: ${latitude} ;;
+    sql_longitude: ${longitude} ;;
+
+  }
+
   dimension: postal_code {
     type: string
     sql: ${TABLE}.postal_code ;;
