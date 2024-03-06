@@ -1,14 +1,16 @@
-- dashboard: user_report_extend
-  extends: user_report_interim
-  title: User Report Extend
+
+- dashboard: user_report_interim
+  title: User Report Interim
+  extends: user_report
   layout: newspaper
+  preferred_viewer: dashboards-next
   elements:
-  - title: Min Age
-    name: Min Age
+  - title: User report
+    name: User report
     model: haengeun_demo
     explore: users
     type: single_value
-    fields: [users.min_age]
+    fields: [users.avg_age]
     limit: 500
     column_limit: 50
     query_timezone: America/Los_Angeles
@@ -21,7 +23,11 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    single_value_title: Min Age
+    single_value_title: Average Age
     value_format: "##.##"
     defaults_version: 1
     listen: {}
+    row: 0
+    col: 0
+    width: 8
+    height: 6
