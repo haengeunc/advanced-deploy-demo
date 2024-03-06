@@ -63,6 +63,11 @@ view: users {
     sql: ${age} ;;
   }
 
+  measure: min_age {
+    type: min
+    sql: ${age} ;;
+  }
+
 
   dimension: gender {
     type: string
